@@ -1,8 +1,8 @@
 {
   "name": "footer-venuee",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Footer VenueE to publish a node package to npmjs.com",
-  "main": "src/footer.tsx",
+  "main": "src/footer.js",
   "scripts": {},
   "repository": {
     "type": "git",
