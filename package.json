@@ -1,0 +1,25 @@
+{
+    "name": "footer-venuee",
+    "version": "1.0.1",
+    "description": "Footer VenueE to publish a node package to npmjs.com",
+    "main": "src/footer.tsx",
+    "scripts": {
+    },
+    "repository": { 
+      "type": "git",
+      "url": "git@github.com:beforesecond/hello-nextzy.git"
+    },
+    "keywords": [
+      "npm",
+      "Footer VenueE"
+    ],
+    "author": "BeforeSecond",
+    "license": "MIT", 
+    "bugs": { 
+      "url": "https://github.com/beforesecond/hello-nextzy/issuess"
+    },
+    "homepage": "https://github.com/beforesecond/hello-nextzy/blob/master/README.md", 
+    "devDependencies": { 
+    }
+ 
+  } 
