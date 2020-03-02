@@ -1,8 +1,8 @@
 {
   "name": "footer-venuee",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Footer VenueE to publish a node package to npmjs.com",
-  "main": "src/footer.js",
+  "main": "src/footer.tsx",
   "scripts": {},
   "repository": {
     "type": "git",
@@ -20,6 +20,15 @@
   "homepage": "https://github.com/PacharapongTas/footer-venuee/blob/master/README.md",
   "devDependencies": {},
   "dependencies": {
-    "@types/node": "^13.7.7"
+    "@types/node": "^13.7.7",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "react": "^16.13.0",
+    "react-device-detect": "^1.11.14",
+    "react-i18next": "^11.3.3",
+    "react-icons": "^3.9.0",
+    "reactstrap": "^8.4.1",
+    "styled-components": "^5.0.1",
+    "utility-types": "^3.10.0"
   }
 }
