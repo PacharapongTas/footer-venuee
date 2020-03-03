@@ -1,8 +1,8 @@
 {
 	"compilerOptions": {
-		"target": "esnext",
-		"module": "esnext",
-		"jsx": "preserve",
+		"target": "ES2017",
+		"module": "commonjs",
+		"jsx": "react",
 		"lib": ["dom", "es2017"],
 		"baseUrl": ".",
 		"moduleResolution": "node",

@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { MdPhone, MdEmail } from 'react-icons/md'
 
-import { withI18next, InjectedI18nextProps } from '../lib/withI18next'
-import { LineButton } from '../components/LineButton'
 import {
 	colors,
 	fontWeight,
@@ -14,15 +12,15 @@ import {
 	textLarge1,
 	grid,
 } from '../styles/mixins'
-import { SERVICE_OPTIONS, getSupplierPathName } from '../../modules/vendor/constants'
+// import { SERVICE_OPTIONS, getSupplierPathName } from '../../modules/vendor/constants'
 import DefaultLogo from '../../static/images/venuee-logo.png'
-import {
-	OCCASIONS_OPTIONS,
-	LOCATIONS_OPTIONS,
-	COMPANYS_OPTIONS,
-	LEARNS_OPTIONS,
-} from '../../modules/layout/constants'
-import { VenueEFacebookPage, VenueEInstagram, VenueETwitter } from './socialSharing'
+// import {
+// 	OCCASIONS_OPTIONS,
+// 	LOCATIONS_OPTIONS,
+// 	COMPANYS_OPTIONS,
+// 	LEARNS_OPTIONS,
+// } from '../../modules/layout/constants'
+// import { VenueEFacebookPage, VenueEInstagram, VenueETwitter } from './socialSharing'
 
 const Container = styled.div`
 	border-top: 1px solid ${colors.border};
@@ -168,9 +166,9 @@ const SocialLinkContainer = styled.div`
 	`}
 `
 
-class Footer extends React.PureComponent<InjectedI18nextProps> {
+class Footer extends React.PureComponent {
 	render() {
-		const { t } = this.props
+		// const { t } = this.props
 		const currentYear = new Date().getFullYear()
 		return (
 			<Container>
@@ -187,8 +185,8 @@ class Footer extends React.PureComponent<InjectedI18nextProps> {
 								/>
 								<VenueEAddress>
 									<span>
-										<VenueEName>{t('venuee-address.company-name')}</VenueEName>
-										<div>{t('venuee-address.info')}</div>
+										<VenueEName>{('venuee-address.company-name')}</VenueEName>
+										<div>{('venuee-address.info')}</div>
 									</span>
 								</VenueEAddress>
 								<TextCopyright>
@@ -199,28 +197,28 @@ class Footer extends React.PureComponent<InjectedI18nextProps> {
 									<div>All right reserved.</div>
 								</TextCopyright>
 							</VenueELogoContainer>
-							<SocialLinkContainer>
+							{/* <SocialLinkContainer>
 								<VenueEFacebookPage />
 								<VenueEInstagram />
 								<VenueETwitter />
-							</SocialLinkContainer>
+							</SocialLinkContainer> */}
 						</div>
 					</Content>
 
 					<Content>
 						<div className="col-6 col-md">
 							<H5>Occasions</H5>
-							<ListContainer>
+							{/* <ListContainer>
 								{OCCASIONS_OPTIONS(t).map((occasion, index) => (
 									<SpacePerItem key={index}>
 										<TextListItem href={occasion.value}>{occasion.label}</TextListItem>
 									</SpacePerItem>
 								))}
-							</ListContainer>
+							</ListContainer> */}
 						</div>
 						<div className="col-6 col-md">
-							<H5>{t('suppliers')}</H5>
-							<ListContainer>
+							<H5>{('suppliers')}</H5>
+							{/* <ListContainer>
 								{SERVICE_OPTIONS(t).map((supplier, index) => (
 									<SpacePerItem key={index}>
 										<TextListItem href={`/${getSupplierPathName(supplier.slug)}`}>
@@ -228,37 +226,37 @@ class Footer extends React.PureComponent<InjectedI18nextProps> {
 										</TextListItem>
 									</SpacePerItem>
 								))}
-							</ListContainer>
+							</ListContainer> */}
 						</div>
 						<div className="col-6 col-md">
 							<H5>Locations</H5>
-							<ListContainer>
+							{/* <ListContainer>
 								{LOCATIONS_OPTIONS(t).map((location, index) => (
 									<SpacePerItem key={index}>
 										<TextListItem href={location.value}>{location.label}</TextListItem>
 									</SpacePerItem>
 								))}
-							</ListContainer>
+							</ListContainer> */}
 						</div>
 						<div className="col-6 col-md">
 							<H5>Company</H5>
-							<ListContainer>
+							{/* <ListContainer>
 								{COMPANYS_OPTIONS(t).map((company, index) => (
 									<SpacePerItem key={index}>
 										<TextListItem href={company.value}>{company.label}</TextListItem>
 									</SpacePerItem>
 								))}
-							</ListContainer>
+							</ListContainer> */}
 						</div>
 						<div className="col-6 col-md">
 							<H5>Learn</H5>
-							<ListContainer>
+							{/* <ListContainer>
 								{LEARNS_OPTIONS(t).map((learn, index) => (
 									<SpacePerItem key={index}>
 										<TextListItem href={learn.value}>{learn.label}</TextListItem>
 									</SpacePerItem>
 								))}
-							</ListContainer>
+							</ListContainer> */}
 						</div>
 						<div className="col-6 col-md">
 							<H5>Need help?</H5>
@@ -293,10 +291,7 @@ class Footer extends React.PureComponent<InjectedI18nextProps> {
 								</SpacePerItem>
 								<ContactContainer>
 									<SpacePerItem>
-										<TextListItem>{t('contact-us')}</TextListItem>
-									</SpacePerItem>
-									<SpacePerItem>
-										<LineButton />
+										<TextListItem>{('contact-us')}</TextListItem>
 									</SpacePerItem>
 								</ContactContainer>
 							</NeedHelpListContainer>
@@ -308,4 +303,4 @@ class Footer extends React.PureComponent<InjectedI18nextProps> {
 	}
 }
 
-export default withI18next()(Footer)
+export default Footer
